@@ -2,11 +2,12 @@
 
 3.  Shifters
 
->>
+>> Dynamic: the system requires 16 selectors with size of 16, driven by the shftAmnt. 
+Every selector is connected to all the elements(words) of the vector in different input.
 
->>
+>> Costant: there is no need for selectors.
 
->>
+>> the system is dynamic and requires 16 selectors each with 16 input and one output, driven by shftAmnt.
 
 ---
 
