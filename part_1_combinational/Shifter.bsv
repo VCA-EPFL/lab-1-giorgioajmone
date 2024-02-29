@@ -17,7 +17,7 @@ function Vector#(16, Word) barrelLeft(Vector#(16, Word) in, Bit#(4) shftAmnt);
     Vector#(16, Word) result = in;
 
     for(Integer i = 3; i >= 0; i = i - 1) begin
-        if(shftAmnt[i] == 1'b1) 
+        if(shftAmnt[i] == 1) 
             result = naiveShfl(result, fromInteger(2**i));
     end
 
