@@ -21,7 +21,7 @@ module mkTest(Empty);
                let data = tpl_2(test);
                let reference = naiveShfl(data, shftAmnt);
                let resStudent = barrelLeft(data, shftAmnt);
-               if (reference != resStudent) begin
+               if (reference != resStudent) begin 
                     $display("The reference design said:", fshow(data), " shifted left by %d ", shftAmnt, "=", fshow(reference));
                     $display("The design under test gave a result", fshow(resStudent));
                     $finish(1);
